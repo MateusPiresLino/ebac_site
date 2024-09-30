@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans", sans-serif;
+}
+
+/*Inicio da estilização do header*/
+.container_menu nav {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0; /* tirar o margim-bottom que esta sendo aplicado e impedindo o aling-items*/
+}
+
+ul li {
+    margin: 0 23px;
+}
+
+nav ul a {
+    color: #7F7F7F;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+nav ul > a:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF5C01;
+    color: #FFE5FF;
+    height: 35px;
+    max-width: 200px;
+    transition: calc(0.7s);
+}
+
+.container_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74px;
+    border-top: 1px solid #E6E3E3;
+    border-bottom: 1px solid #E6E3E3;
+}
+/*Fim da estilização do header*/
+
+/*inicio estilização carrossel*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* inverter a cor das setas para preto */
+}
+
+.carousel-indicators {
+    list-style-type: none;
+}
+/*Fim estilização carrossel*/
+
+/*Inicio formulario*/
+
+.container_box2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+
+.container_formulario {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.container_formulario input,
+textarea {
+    margin-bottom: 15px;
+    height: 35px;
+    padding: 8px;
+    border: 1px solid #7F7F7F;
+}
+
+.container_formulario input:hover {
+    border: 1px solid #E25E19;
+}
+
+.container_formulario textarea:hover {
+    border: 1px solid #E25E19;
+
+}
+
+.container_formulario textarea {
+    display: block;
+    height: 180px;
+    resize: none;
+}
+
+.container_formulario button {
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #E25E19;
+    border-radius: 5px;
+}
+
+.container_testemunho > iframe {
+    display: block;
+    align-items: center;
+    height: 360px;
+    width: 480px;
+}
+
